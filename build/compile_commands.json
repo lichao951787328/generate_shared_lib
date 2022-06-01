@@ -1,0 +1,103 @@
+[
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/Heuclid/euclid/orientation/Orientation2D.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/euclid/orientation/Orientation2D.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/euclid/orientation/Orientation2D.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/Heuclid/euclid/tools/HeuclidCoreTool.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/euclid/tools/HeuclidCoreTool.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/euclid/tools/HeuclidCoreTool.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/Heuclid/geometry/tools/HeuclidGeometryTools.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/geometry/tools/HeuclidGeometryTools.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/geometry/tools/HeuclidGeometryTools.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/Heuclid/geometry/tools/HeuclidPolygonTools.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/geometry/tools/HeuclidPolygonTools.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/geometry/tools/HeuclidPolygonTools.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/Heuclid/geometry/ConvexPolygon2D.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/geometry/ConvexPolygon2D.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/Heuclid/geometry/ConvexPolygon2D.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/AStarFootstepPlanner.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/AStarFootstepPlanner.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/AStarFootstepPlanner.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/Block.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/Block.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/Block.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/FootstepPlannerBasic.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/FootstepPlannerBasic.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/FootstepPlannerBasic.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/parameters.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/parameters.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/parameters.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/StepExpansion/ParameterBasedStepExpansion.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepExpansion/ParameterBasedStepExpansion.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepExpansion/ParameterBasedStepExpansion.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/StepExpansion/PartialExpansionManager.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepExpansion/PartialExpansionManager.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepExpansion/PartialExpansionManager.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/StepCost/FootstepCostCalculator.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepCost/FootstepCostCalculator.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepCost/FootstepCostCalculator.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/StepCost/HeuristicCalculator.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepCost/HeuristicCalculator.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepCost/HeuristicCalculator.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/StepCheck/FootstepCompletionChecker.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepCheck/FootstepCompletionChecker.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepCheck/FootstepCompletionChecker.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/PlotCheck/FootPolygon.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/PlotCheck/FootPolygon.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/PlotCheck/FootPolygon.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/PlotCheck/PlotChecker.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/PlotCheck/PlotChecker.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/PlotCheck/PlotChecker.cpp"
+},
+
+{
+  "directory": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build",
+  "command": "/usr/bin/c++  -DFootstepPlanner_EXPORTS -I../include -I/usr/include/python3.8  -O3 -DNDEBUG -fPIC   -o CMakeFiles/FootstepPlanner.dir/src/FootstepPlannerLJH/StepConstraints/StepConstraintCheck.cpp.o -c /home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepConstraints/StepConstraintCheck.cpp",
+  "file": "/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/src/FootstepPlannerLJH/StepConstraints/StepConstraintCheck.cpp"
+}
+]
