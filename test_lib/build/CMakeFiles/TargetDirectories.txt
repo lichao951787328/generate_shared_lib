@@ -1,3 +1,0 @@
-/home/humanoid/work/test-ljh/test_lib/build/CMakeFiles/rebuild_cache.dir
-/home/humanoid/work/test-ljh/test_lib/build/CMakeFiles/edit_cache.dir
-/home/humanoid/work/test-ljh/test_lib/build/CMakeFiles/test.dir

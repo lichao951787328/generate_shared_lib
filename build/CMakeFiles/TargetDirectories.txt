@@ -1,7 +1,0 @@
-/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build/CMakeFiles/install/strip.dir
-/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build/CMakeFiles/install/local.dir
-/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build/CMakeFiles/install.dir
-/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build/CMakeFiles/list_install_components.dir
-/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build/CMakeFiles/rebuild_cache.dir
-/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build/CMakeFiles/edit_cache.dir
-/home/humanoid/work/test-ljh/AStarFootstepPlanner/test/build/CMakeFiles/FootstepPlanner.dir

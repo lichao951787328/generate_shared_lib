@@ -9,9 +9,9 @@ double LatticePoint::gridSizeYaw = 2.0*pi_f/LatticePoint::yawDivision;
 
 LatticePoint::LatticePoint(double x, double y, double yaw)
 {
-    this->xIndex   = int(x/this->gridSizeXY);
-    this->yIndex   = int(y/this->gridSizeXY);
-    this->yawIndex = int(yaw/this->gridSizeYaw);
+    this->xIndex   = int(std::round(x/this->gridSizeXY));
+    this->yIndex   = int(std::round(y/this->gridSizeXY));
+    this->yawIndex = int(std::round(yaw/this->gridSizeYaw));
 }
 
 LatticePoint::LatticePoint(int _x, int _y, int _yaw)
@@ -266,4 +266,39 @@ int FootstepGraphNode::computeHashCode()
     return res; 
 }
 
+
+AccurateFootstep::AccurateFootstep(const ljh::mathlib::Pose3D<double>& _pose, const RobotSide& _robotside)
+{
+    this->x = _pose.getPosition().getX() + -sin(_pose.getOrientation().getYaw()) * _robotside.negateIfRightSide(IDEAL_STEP_WIDTH/2.0);
+    this->y = _pose.getPosition().getY() +  cos(_pose.getOrientation().getYaw()) * _robotside.negateIfRightSide(IDEAL_STEP_WIDTH/2.0);
+    this->yaw = _pose.getOrientation().getYaw();
+    this->robotside = _robotside;
+}
+
+// get Accurate Footstep Info from midFootPose
+AccurateFootstep::AccurateFootstep(const ljh::mathlib::Pose3D<double>& _pose, const enum StepFlag& _stepflag)
+{
+    RobotSide _robotside(_stepflag);
+    //AccurateFootstep(_pose,robotside);
+    this->x = _pose.getPosition().getX() + -sin(_pose.getOrientation().getYaw()) * _robotside.negateIfRightSide(IDEAL_STEP_WIDTH/2.0);
+    this->y = _pose.getPosition().getY() +  cos(_pose.getOrientation().getYaw()) * _robotside.negateIfRightSide(IDEAL_STEP_WIDTH/2.0);
+    this->yaw = _pose.getOrientation().getYaw();
+    this->robotside = _robotside;
+}
+
+void AccurateFootstep::setFromNode(const FootstepGraphNode& _node)
+{
+    this->x=_node.getSecondStep().getX();
+    this->y=_node.getSecondStep().getY();
+    this->yaw=_node.getSecondStep().getYaw();
+    this->robotside = _node.getSecondStepSide();
+}
+
+void AccurateFootstep::operator=(const AccurateFootstep& other)
+{
+    this->x = other.x;
+    this->y = other.y;
+    this->yaw = other.yaw;
+    this->robotside = other.robotside;
+}
 _FOOTSTEP_PLANNER_END

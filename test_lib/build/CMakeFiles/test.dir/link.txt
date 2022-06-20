@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/test.dir/test.cpp.o  -o test   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lFootstepPlanner -lpython3.8 

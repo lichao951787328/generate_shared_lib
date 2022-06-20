@@ -45,7 +45,7 @@ public:
 
     cost_t computeEdgeCost(Location candidateNode, Location stanceNode);
     cost_t computeHeuristicCost(Location candidateNode);
-
+    cost_t computeHeuristicCostWithEllipsiodPath(Location candidateNode);
     void initialize(Pose3D<double> _goalPose, Pose3D<double> _startPose);
 
     cost_t getEdgeCost() const {return this->edgeCost;};
@@ -57,9 +57,9 @@ public:
 
 // cost_t FootstepCostCalculator::computeCost(DiscreteFootstep candidateStep, DiscreteFootstep stanceStep, DiscreteFootstep startOfSwing)
 // {
-//     this->xOffset = abs(candidateStep.getMidFootPoint().getX() - stanceStep.getMidFootPoint().getX());
-//     this->yOffset = abs(candidateStep.getMidFootPoint().getY() - stanceStep.getMidFootPoint().getY());
-//     this->yawOffset = abs(candidateStep.getYaw()-stanceStep.getYaw());
+//     this->xOffset = std::abs(candidateStep.getMidFootPoint().getX() - stanceStep.getMidFootPoint().getX());
+//     this->yOffset = std::abs(candidateStep.getMidFootPoint().getY() - stanceStep.getMidFootPoint().getY());
+//     this->yawOffset = std::abs(candidateStep.getYaw()-stanceStep.getYaw());
     
 //     // this->zOffset = cost_t(0);
 //     // this->pitchOffset = cost_t(0);

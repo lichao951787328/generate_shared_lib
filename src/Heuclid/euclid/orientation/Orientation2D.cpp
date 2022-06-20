@@ -11,7 +11,7 @@ void Orientation2D::setYaw(const double& _yaw)
 bool Orientation2D::epsilonEquals(const Orientation2D& other, const double& epsilon) const
 {
     return (std::abs(this->getYaw()-other.getYaw())<=epsilon);
-    //return (abs(this->yaw-other.yaw)<=epsilon);
+    //return (std::abs(this->yaw-other.yaw)<=epsilon);
 }
 
 bool Orientation2D::geometricallyEquals(const Orientation2D& other, const double& epsilon)

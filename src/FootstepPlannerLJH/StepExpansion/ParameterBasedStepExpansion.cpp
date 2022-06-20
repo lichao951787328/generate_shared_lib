@@ -38,7 +38,7 @@ void ParameterBasedStepExpansion::initialize()
                 
                 // need a stance clear region  condition                                                    //DiscreteFootstep(x,y,yaw,RobotSide.Left))
                 // Reserve the node which is collided with stance clear region but is parallel to the stance foot in yaw
-                // if(!(this->stepConstraintChecker.isTwoFootCollided(0.0,0.0,0.0,stepR, x,y,yaw,stepL) && abs(yaw)>1e-4 ))
+                // if(!(this->stepConstraintChecker.isTwoFootCollided(0.0,0.0,0.0,stepR, x,y,yaw,stepL) && std::abs(yaw)>1e-4 ))
                 // {
                     this->xOffsets.push_back(x);
                     this->yOffsets.push_back(y);

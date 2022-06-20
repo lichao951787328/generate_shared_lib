@@ -35,6 +35,7 @@ void AStarFootstepPlanner::initialize(Pose2D<double> _goalPose2D, Pose3D<double>
     this->solutionFoundFlag = GOAL_NO_REACHED;
     this->heuclidCoreTool = HeuclidCoreTool();
     this->path.clear();
+    this->accuratePath.clear();
     this->plotChecker = PlotChecker();
     this->countSearch = 0;
 }
@@ -63,7 +64,9 @@ void AStarFootstepPlanner::doAStarSearch()
         if(this->param.getDebugFlag(this->param))
         {
             this->plotChecker.plotExpansion(current,this->neighbors);
-            this->plotChecker.plotFrontier(this->frontier); 
+            this->plotChecker.plotFrontier(this->frontier);
+            if(this->param.isStairAlignMode)
+                this->plotChecker.plotGoalposeAndStair(this->goalPose); 
         }
         
 
@@ -80,7 +83,12 @@ void AStarFootstepPlanner::doAStarSearch()
                     || new_cost < this->costSoFarMap[next] )
                 {
                     this->costSoFarMap[next] = new_cost;
-                    cost_t priority = new_cost + this->stepCostCalculator.computeHeuristicCost(next);
+
+                    cost_t priority;
+                    if(this->param.isStairAlignMode)
+                        priority = new_cost + this->stepCostCalculator.computeHeuristicCostWithEllipsiodPath(next);
+                    else
+                        priority = new_cost + this->stepCostCalculator.computeHeuristicCost(next);
 
                     // if(this->param.getDebugFlag(this->param))
                     //     std::cout<< "the heuristic cost: "<<this->stepCostCalculator.getHeuristicCost()<<std::endl;
@@ -168,4 +176,51 @@ void AStarFootstepPlanner::calFootstepSeries()
     
 }
 
+void AStarFootstepPlanner::calAccurateFootstepSeries()
+{
+    if(!this->path.empty())
+    {   
+        int i;
+        AccurateFootstep footstep;
+        AccurateFootstep footstepL(this->goalPose,stepL);
+        AccurateFootstep footstepR(this->goalPose,stepR);
+        for(i=0;i<path.size()-2;i++)
+        {
+            //footstep = AccurateFootstep(this->path.at(i));
+
+            footstep.setFromNode(this->path.at(i));
+            this->accuratePath.push_back(footstep);
+        }
+
+        if(path.at(i).getSecondStepSide().getStepFlag()==stepL)
+        {
+            this->accuratePath.push_back(footstepL);
+            this->accuratePath.push_back(footstepR);
+        }
+        else
+        {
+            this->accuratePath.push_back(footstepR);
+            this->accuratePath.push_back(footstepL);
+        }
+        // load the real last two accurate footsteps from goalpose, drop out the last two search 
+        
+    }
+}
+
+std::vector<AccurateFootstep> AStarFootstepPlanner::getOrCalAccurateFootstepSeries()
+{
+    if(this->accuratePath.empty())
+        this->calAccurateFootstepSeries();
+    
+    return this->accuratePath;
+}
+
+
+void AStarFootstepPlanner::plotAccurateSearchOutcome()
+{
+    if(this->accuratePath.empty())
+        this->calAccurateFootstepSeries();
+
+    this->plotChecker.plotAccurateSearchOutcome2(this->accuratePath,this->goalPose,this->startPose,this->stepCostCalculator.heuristicCalculator.pathHolder);
+}
 _FOOTSTEP_PLANNER_END

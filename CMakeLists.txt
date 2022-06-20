@@ -28,6 +28,8 @@ aux_source_directory(src/FootstepPlannerLJH/StepCost SRC_FILES)
 aux_source_directory(src/FootstepPlannerLJH/StepCheck SRC_FILES)
 aux_source_directory(src/FootstepPlannerLJH/PlotCheck SRC_FILES)
 aux_source_directory(src/FootstepPlannerLJH/StepConstraints SRC_FILES)
+aux_source_directory(src/FootstepPlannerLJH/SimpleBodyPathPlanner SRC_FILES)
+
 
 # add_executable(test test.cpp ${SRC_FILES})
 

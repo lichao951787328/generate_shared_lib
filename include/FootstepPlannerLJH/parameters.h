@@ -61,6 +61,13 @@ public:
     static CONST double AStarHeuristicWeight;
     static CONST double AStarHeuristicFinalWeight;
     
+    static CONST double HWPOfWalkDistacne;
+    static CONST double HWPOfInitialTurnDistacne;
+    static CONST double HWPOfFinalTurnDistacne;
+
+    static CONST double HWPOfFinalWalkDistacne;
+    static CONST double HWPOfFinalFinalTurnDistacne;
+
     // For Node Stop Check
     static CONST double goalDistanceProximity;
     static CONST double goalYawProximity;
@@ -102,6 +109,11 @@ public:
     bool   getStairAlignMode(const parameters& param);
     ljh::mathlib::ConvexPolygon2D getStairPolygon(const parameters& param);
     double getFootPolygonExtendedLength(const parameters& param);
+    double getHWPOfWalkDistacne(const parameters& param);
+    double getHWPOfInitialTurnDistacne(const parameters& param);
+    double getHWPOfFinalTurnDistacne(const parameters& param);
+    double getHWPOfFinalWalkDistacne(const parameters& param);
+    double getHWPOfFinalFinalTurnDistacne(const parameters& param);
 
     void SetEdgeCostDistance(parameters& param, const double& change);
     void SetEdgeCostYaw(parameters& param, const double& change);
@@ -127,6 +139,11 @@ public:
     void SetStairAlignMode(parameters& param, const bool& change);
     void SetStairPolygon(parameters& param, std::vector<Point2D<double> > stairBuffer, int numOfVertices, bool clockwiseOrdered);
     void SetFootPolygonExtendedLength(const parameters& param, const double& change);
+    void SetHWPOfWalkDistacne(const parameters& param, const double& change);
+    void SetHWPOfInitialTurnDistacne(const parameters& param, const double& change);
+    void SetHWPOfFinalTurnDistacne(const parameters& param, const double& change);
+    void SetHWPOfFinalWalkDistacne(const parameters& param, const double& change);
+    void SetHWPOfFinalFinalTurnDistacne(const parameters& param, const double& change);
 };
 
 
